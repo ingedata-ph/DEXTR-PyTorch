@@ -3,7 +3,8 @@ class Path(object):
     @staticmethod
     def db_root_dir(database):
         if database == 'pascal':
-            return '/path/to/PASCAL/VOC2012'  # folder that contains VOCdevkit/.
+            # folder that contains VOCdevkit/.
+            return '/path/to/PASCAL/VOC2012'
 
         elif database == 'sbd':
             return '/path/to/SBD/'  # folder with img/, inst/, cls/, etc.
@@ -13,4 +14,4 @@ class Path(object):
 
     @staticmethod
     def models_dir():
-        return 'models/'
+        return 'tools/annotation/dextr/models/'
